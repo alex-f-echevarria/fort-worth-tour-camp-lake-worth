@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#f5efe4">
+	<title>The Little Lantern | A Storybook</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<main class="storybook" aria-labelledby="book-title">
+		<div class="book-topline" aria-hidden="true">
+			<span class="topline-rule"></span>
+			<span class="topline-label">A pocket story</span>
+			<span class="topline-rule"></span>
+		</div>
+
+		<section class="book" aria-live="polite">
+			<article class="page page--title is-active" data-page="0">
+				<div class="title-art" aria-hidden="true">
+					<span class="moon"></span>
+					<span class="hill hill--back"></span>
+					<span class="hill hill--front"></span>
+					<span class="lantern"><span></span></span>
+					<span class="firefly firefly--one"></span>
+					<span class="firefly firefly--two"></span>
+					<span class="firefly firefly--three"></span>
+				</div>
+				<div class="title-copy">
+					<p class="eyebrow">A bedtime adventure</p>
+					<h1 id="book-title">The Little<br><em>Lantern</em></h1>
+					<p class="title-subtitle">A tiny light with a very big journey.</p>
+					<p class="byline">Written for curious dreamers</p>
+				</div>
+			</article>
+
+			<article class="page page--story" data-page="1">
+				<div class="page-heading"><span>Chapter one</span><span>01</span></div>
+				<img class="story-image" src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&q=80" alt="A misty forest path at dusk">
+				<div class="story-copy">
+					<h2>At the edge of the woods</h2>
+					<p>At the edge of the woods, where the day turned gold, a little lantern woke up beneath an old oak tree.</p>
+					<p>It had no map and no one to guide it. Still, its warm glow whispered, <q>There is always somewhere new to go.</q></p>
+				</div>
+			</article>
+
+			<article class="page page--story" data-page="2">
+				<div class="page-heading"><span>Chapter two</span><span>02</span></div>
+				<img class="story-image" src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80" alt="A quiet lake reflecting the evening sky">
+				<div class="story-copy">
+					<h2>A secret on the water</h2>
+					<p>The lantern followed a trail of silver pebbles until it reached a quiet lake. The stars were hiding in its dark, glassy water.</p>
+					<p>With one brave step, it held its light over the shore. A family of sleeping ducks smiled in their dreams.</p>
+				</div>
+			</article>
+
+			<article class="page page--story" data-page="3">
+				<div class="page-heading"><span>Chapter three</span><span>03</span></div>
+				<img class="story-image" src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=80" alt="Sunlight shining between tall trees">
+				<div class="story-copy">
+					<h2>Light travels farther</h2>
+					<p>By morning, the little lantern had climbed the tallest hill. Below, the path looked less like a mystery and more like an invitation.</p>
+					<p>It learned that a light does not have to be large to help someone find their way.</p>
+				</div>
+			</article>
+
+			<article class="page page--end" data-page="4">
+				<div class="end-sun" aria-hidden="true"></div>
+				<div class="end-copy">
+					<p class="eyebrow">And so it went</p>
+					<h2>The<br><em>End</em></h2>
+					<p class="end-message">But every good story leaves a little light behind.</p>
+					<button class="restart-button" type="button">Read it again <span aria-hidden="true">↗</span></button>
+				</div>
+			</article>
+		</section>
+
+		<nav class="book-controls" aria-label="Story navigation">
+			<button class="nav-button" id="previous-button" type="button" aria-label="Go to previous page" disabled>
+				<span aria-hidden="true">←</span> Back
+			</button>
+			<div class="page-status" aria-label="Page 1 of 5">
+				<span id="page-number">01</span><span class="status-divider">/</span><span>05</span>
+			</div>
+			<button class="nav-button nav-button--next" id="next-button" type="button">
+				Next <span aria-hidden="true">→</span>
+			</button>
+		</nav>
+		<p class="swipe-hint">Swipe or use the arrows to turn the page</p>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
