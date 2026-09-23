@@ -98,7 +98,7 @@ h1 em, h2 em { color: var(--coral); font-style: normal; }
 .page--end { background: #172d2f; }
 .end-sun { position: absolute; top: 17%; width: 150px; height: 150px; border-radius: 50%; background: #c9684d; box-shadow: 0 0 0 18px rgba(201,104,77,.14), 0 0 0 35px rgba(201,104,77,.08), 0 0 35px rgba(201,104,77,.28); }
 .page--end::before { position: absolute; right: -20%; bottom: -10%; left: -20%; height: 53%; border-radius: 50% 50% 0 0; background: #263d38; content: ""; }
-.end-copy { margin-top: 120px; }.end-copy h2 { font-size: clamp(76px, 21vw, 120px); line-height: .7; }.end-message { max-width: 210px; margin: 29px auto 24px; color: #b9c0a8; font-size: 13px; line-height: 1.6; }
+.end-copy { margin-top: 50px; }.end-copy h2 { font-size: clamp(76px, 21vw, 120px); line-height: .7; }.end-message { width: min(290px, 100%); max-width: none; margin: 29px auto 24px; color: #b9c0a8; font-size: 12px; line-height: 1.6; white-space: nowrap; }
 .restart-button { position: relative; z-index: 1; border: 0; border-bottom: 1px solid #d98a61; padding: 4px 0; color: #e2a06f; background: transparent; font-size: 11px; font-weight: 700; cursor: pointer; }.restart-button span { margin-left: 5px; font-size: 16px; }
 
 .book-controls { display: flex; align-items: center; justify-content: space-between; padding: 20px 4px 0; }
